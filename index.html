@@ -1,120 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Robotiko – AI & Robotic Engineering</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ishan | Robotics Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* === Reset & Base === */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: #0A0A1F;
+      color: #FFFFFF;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    /* === Utility === */
+    .container {
+      max-width: 1140px;
+      margin: auto;
+      padding: 0 20px;
+    }
+
+    .btn {
+      background-color: #4D5BFF;
+      padding: 12px 24px;
+      border-radius: 8px;
+      color: white;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #2f3be6;
+    }
+
+    .section {
+      padding: 60px 0;
+    }
+
+    .section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #B0B4FF;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    /* === Header === */
+    header {
+      background-color: #0A0A1F;
+      padding: 20px 0;
+      border-bottom: 1px solid #1a1a3d;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #4D5BFF;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    /* === Hero === */
+    .hero {
+      background: linear-gradient(to right, #111132, #0A0A1F);
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3.2rem;
+      color: #FFFFFF;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      color: #B0B4FF;
+      max-width: 600px;
+      margin: 0 auto 30px;
+    }
+
+    /* === About === */
+    .about {
+      background-color: #111132;
+    }
+
+    .about p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 1.1rem;
+      color: #B0B4FF;
+    }
+
+    /* === Projects === */
+    .projects {
+      background-color: #0A0A1F;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .project-card {
+      background-color: #1A1A3D;
+      padding: 20px;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-card h3 {
+      color: #4D5BFF;
+      margin-bottom: 10px;
+    }
+
+    /* === Contact === */
+    .contact {
+      background-color: #111132;
+    }
+
+    .contact p {
+      margin-bottom: 10px;
+    }
+
+    .footer {
+      padding: 20px 0;
+      text-align: center;
+      background-color: #0A0A1F;
+      border-top: 1px solid #1a1a3d;
+      color: #555;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">robotiko</div>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#" class="get-started">Get Started</a></li>
-            </ul>
-        </nav>
-        <div class="hero">
-            <div class="hero-text">
-                <h1>Changing Your Idea of What Robots Can Do.</h1>
-                <p>AI & Robotic Engineering</p>
-                <a href="#" class="primary-btn">Learn More</a>
-                <div class="experience">
-                    <span>12+</span>
-                    <p>Years Of Experience</p>
-                </div>
-            </div>
-            <div class="hero-img">
-                <img src="robot.png" alt="Robot" />
-            </div>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">Ishan Robotics</div>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
         </div>
-    </header>
+      </nav>
+    </div>
+  </header>
 
-    <section class="about">
-        <h2>Innovating the Future with AI and Robotics</h2>
-        <div class="features">
-            <div>
-                <h3>Automation</h3>
-                <p>Creating next-gen automation for all sectors.</p>
-            </div>
-            <div>
-                <h3>Precision</h3>
-                <p>Engineered for accuracy and reliability in every application.</p>
-            </div>
-            <div>
-                <h3>Accuracy</h3>
-                <p>Delivering efficient results with advanced robotics and AI.</p>
-            </div>
-        </div>
-        <div class="logos">
-            <span>LogoIpsum</span>
-            <span>LogoIpsum</span>
-            <span>LogoIpsum</span>
-            <span>LogoIpsum</span>
-        </div>
-    </section>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Changing the World with Robotics</h1>
+      <p>Hi, I’m Ishan — a robotics engineer pushing the boundaries of intelligent systems.</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </section>
 
-    <section class="industry">
-        <h2>Revolutionize Your Industry with AI and Robotics</h2>
-        <div class="industry-cards">
-            <div>Inspection</div>
-            <div>Construction</div>
-            <div>Manufacturing</div>
-            <div>Public Safety</div>
-            <div>Precision</div>
-            <div>Management</div>
-        </div>
-    </section>
+  <!-- About Section -->
+  <section class="section about" id="about">
+    <div class="container text-center">
+      <h2>About Me</h2>
+      <p>I build robots that see, think, and act. My passion lies in the intersection of hardware and artificial intelligence — bringing mechatronic systems to life through ROS, control systems, and embedded software.</p>
+    </div>
+  </section>
 
-    <section class="reasons">
-        <h2>The Top Reasons to Partner with Us</h2>
-        <ul>
-            <li>Expertise in AI & Robotics</li>
-            <li>Robotics System Integration</li>
-            <li>Cutting-Edge Technologies</li>
-        </ul>
-    </section>
-
-    <section class="trusted">
-        <h2>Trusted by 30k+ World Class Companies</h2>
-        <div class="testimonials">
-            <div>
-                <p>“Outstanding team and results.”</p>
-                <span>- Company A</span>
-            </div>
-            <div>
-                <p>“Innovative solutions, highly recommend.”</p>
-                <span>- Company B</span>
-            </div>
-            <div>
-                <p>“Automation made easy.”</p>
-                <span>- Company C</span>
-            </div>
-            <div>
-                <p>“Leaders in AI & robotics integration.”</p>
-                <span>- Company D</span>
-            </div>
+  <!-- Projects Section -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <h2 class="text-center">Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Line Following Robot</h3>
+          <p>Arduino-based robot using PID control for smooth and accurate line tracking.</p>
         </div>
-    </section>
-
-    <footer>
-        <div class="footer-content">
-            <div class="logo">robotiko</div>
-            <div>
-                <p>Subscribe to Newsletter</p>
-                <input type="email" placeholder="Your email" />
-                <button>Subscribe</button>
-            </div>
-            <div>
-                <p>&copy; 2023 robotiko. All Rights Reserved.</p>
-            </div>
+        <div class="project-card">
+          <h3>6 DOF Robotic Arm</h3>
+          <p>Designed and programmed a robotic arm with inverse kinematics for precise object manipulation.</p>
         </div>
-    </footer>
+        <div class="project-card">
+          <h3>ROS SLAM Simulation</h3>
+          <p>Simulated TurtleBot navigation using SLAM in Gazebo with ROS Noetic stack.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact" id="contact">
+    <div class="container text-center">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:ishan@example.com">ishan@example.com</a></p>
+      <p>GitHub: <a href="https://github.com/AutoM80r" target="_blank">AutoM80r</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Ishan's Robotics Portfolio. All rights reserved.</p>
+  </footer>
 </body>
 </html>
