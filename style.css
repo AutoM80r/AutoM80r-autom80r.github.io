@@ -217,7 +217,6 @@ body {
 }
 
 /* ==== Projects Section ==== */
-/* ==== Projects Section ==== */
 .projects {
   background: var(--surface-light);
 }
@@ -229,15 +228,15 @@ body {
 }
 .project-card {
   background: var(--card-bg);
-  border-radius: 18px;
+  border-radius: 14px; /* slightly smaller radius */
   box-shadow: 0 0 25px 6px var(--card-shadow);
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1.8rem 1rem 1.5rem 1rem;
+  padding: 1.2rem 0.8rem 1.1rem 0.8rem; /* reduced padding */
   position: relative;
   transition: transform 0.24s, box-shadow 0.22s;
-  min-height: 270px;
+  min-height: 230px; /* reduced min height */
   overflow: hidden;
 }
 .project-card:hover {
