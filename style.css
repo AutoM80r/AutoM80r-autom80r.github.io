@@ -181,6 +181,17 @@ body {
 .about {
   background: var(--surface);
 }
+.profile-photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #00bfff;
+  box-shadow: 0 0 15px #00bfffaa;
+  margin: 0 auto 1.6rem auto;
+  display: block;
+}
+
 .about-icons {
   display: flex;
   justify-content: center;
