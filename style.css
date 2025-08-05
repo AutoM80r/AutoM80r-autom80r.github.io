@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 2rem;
+  font-family: sans-serif;
+  background: #0d1117;
+  color: #c9d1d9;
+}
+
+header {
+  text-align: center;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #30363d;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #58a6ff;
+}
+
+h2 {
+  color: #79c0ff;
+}
+
+a {
+  color: #58a6ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+section {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #161b22;
+  border-radius: 10px;
+}
