@@ -1,102 +1,262 @@
+/* Reset & Body */
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
 body {
-  font-family: 'Inter', sans-serif;
-  background-color: #fff;
-  color: #333;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #0a0b18;
+    color: #f3f3fa;
+    line-height: 1.6;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 24px 60px;
-  background-color: #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+/* Navbar */
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 8%;
+    background: rgba(5, 6, 20, 0.95);
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+header .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #42aaff;
+}
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+header nav ul li a {
+    color: #f3f3fa;
+    text-decoration: none;
+    padding: 8px 18px;
+    border-radius: 5px;
+    transition: background 0.2s;
+}
+header nav ul li a:hover,
+header nav ul li .get-started {
+    background: #1d2348;
+    color: #42aaff;
+}
+header nav ul li .get-started {
+    background: #42aaff;
+    color: #fff;
+    font-weight: bold;
 }
 
-.logo {
-  font-weight: 700;
-  font-size: 24px;
-  color: #222;
-}
-.logo span {
-  color: #2a64f6;
-  font-style: italic;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-}
-
-nav a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  transition: 0.2s;
-}
-
-nav a:hover {
-  color: #2a64f6;
-}
-
-nav .btn {
-  background-color: #ff3366;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 999px;
-  font-weight: 600;
-}
-
+/* Hero */
 .hero {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 80px 60px;
-  background-color: #f9f9f9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 8% 40px 8%;
+    background: linear-gradient(135deg, #151c3b 0%, #0d1129 100%);
 }
-
 .hero-text {
-  max-width: 50%;
+    flex: 1;
 }
-
 .hero-text h1 {
-  font-size: 48px;
-  color: #2a64f6;
-  margin-bottom: 20px;
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: #fff;
 }
-
 .hero-text p {
-  font-size: 16px;
-  line-height: 1.6;
-  margin-bottom: 30px;
-  color: #555;
+    font-size: 1.18rem;
+    color: #42aaff;
+    margin-bottom: 14px;
 }
-
-.btn.primary {
-  background-color: #ff3366;
-  color: #fff;
-  padding: 12px 28px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 600;
+.primary-btn {
+    display: inline-block;
+    background: #42aaff;
+    color: #fff;
+    padding: 12px 28px;
+    border-radius: 6px;
+    margin-top: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s;
 }
-
+.primary-btn:hover {
+    background: #255ea9;
+}
+.experience {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 22px;
+}
+.experience span {
+    font-size: 2.1rem;
+    color: #42aaff;
+    font-weight: bold;
+}
 .hero-img img {
-  width: 100%;
-  max-width: 450px;
+    width: 350px;
+    max-width: 80vw;
 }
 
+/* About */
+.about {
+    padding: 60px 8%;
+    background: #151c3b;
+}
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 26px;
+    color: #fff;
+}
+.features {
+    display: flex;
+    gap: 38px;
+    margin-bottom: 38px;
+}
+.features div {
+    background: #1d2348;
+    padding: 28px;
+    border-radius: 12px;
+    flex: 1;
+    text-align: center;
+}
+.features h3 {
+    color: #42aaff;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+.logos {
+    display: flex;
+    gap: 24px;
+    margin-top: 24px;
+    flex-wrap: wrap;
+    color: #b0b4c7;
+}
+
+/* Industry Cards */
+.industry {
+    padding: 60px 8%;
+    background: #0a0b18;
+}
+.industry h2 {
+    color: #fff;
+    margin-bottom: 28px;
+}
+.industry-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.industry-cards div {
+    flex: 1 1 150px;
+    background: #151c3b;
+    color: #42aaff;
+    border-radius: 8px;
+    padding: 26px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Reasons */
+.reasons {
+    padding: 60px 8%;
+    background: #151c3b;
+}
+.reasons h2 {
+    color: #fff;
+    margin-bottom: 22px;
+}
+.reasons ul {
+    list-style: disc inside;
+    color: #b0b4c7;
+    font-size: 1.06rem;
+}
+
+/* Testimonials */
+.trusted {
+    padding: 60px 8%;
+    background: #0a0b18;
+}
+.trusted h2 {
+    color: #fff;
+    margin-bottom: 28px;
+}
+.testimonials {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 24px;
+}
+.testimonials div {
+    background: #151c3b;
+    color: #f3f3fa;
+    padding: 28px 18px;
+    border-radius: 10px;
+    font-style: italic;
+}
+
+/* Footer */
 footer {
-  text-align: center;
-  padding: 40px 0;
-  background-color: #fff;
-  color: #999;
-  font-size: 14px;
+    background: #1d2348;
+    padding: 32px 8%;
+    color: #f3f3fa;
+    text-align: center;
+}
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.footer-content .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #42aaff;
+}
+footer input[type="email"] {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 8px;
+}
+footer button {
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: none;
+    background: #42aaff;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+footer button:hover {
+    background: #255ea9;
+}
+
+/* Responsive Design */
+@media (max-width: 1000px) {
+    .hero {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .hero-img {
+        text-align: center;
+        margin-top: 30px;
+    }
+    .about, .industry, .reasons, .trusted, footer {
+        padding: 40px 4%;
+    }
+}
+@media (max-width: 680px) {
+    header nav ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+    .features, .industry-cards, .testimonials {
+        flex-direction: column;
+    }
 }
