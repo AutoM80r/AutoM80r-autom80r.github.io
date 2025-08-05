@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ishan | Robotics Portfolio</title>
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     /* === Reset & Base === */
@@ -181,7 +184,7 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="hero">
+  <section class="hero" data-aos="fade-up">
     <div class="container">
       <h1>Changing the World with Robotics</h1>
       <p>Hi, I’m Ishan — a robotics engineer pushing the boundaries of intelligent systems.</p>
@@ -190,7 +193,7 @@
   </section>
 
   <!-- About Section -->
-  <section class="section about" id="about">
+  <section class="section about" id="about" data-aos="fade-right">
     <div class="container text-center">
       <h2>About Me</h2>
       <p>I build robots that see, think, and act. My passion lies in the intersection of hardware and artificial intelligence — bringing mechatronic systems to life through ROS, control systems, and embedded software.</p>
@@ -202,15 +205,15 @@
     <div class="container">
       <h2 class="text-center">Projects</h2>
       <div class="project-grid">
-        <div class="project-card">
+        <div class="project-card" data-aos="zoom-in">
           <h3>Line Following Robot</h3>
           <p>Arduino-based robot using PID control for smooth and accurate line tracking.</p>
         </div>
-        <div class="project-card">
+        <div class="project-card" data-aos="zoom-in">
           <h3>6 DOF Robotic Arm</h3>
           <p>Designed and programmed a robotic arm with inverse kinematics for precise object manipulation.</p>
         </div>
-        <div class="project-card">
+        <div class="project-card" data-aos="zoom-in">
           <h3>ROS SLAM Simulation</h3>
           <p>Simulated TurtleBot navigation using SLAM in Gazebo with ROS Noetic stack.</p>
         </div>
@@ -219,7 +222,7 @@
   </section>
 
   <!-- Contact Section -->
-  <section class="section contact" id="contact">
+  <section class="section contact" id="contact" data-aos="fade-up">
     <div class="container text-center">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:ishan@example.com">ishan@example.com</a></p>
@@ -231,5 +234,14 @@
   <footer class="footer">
     <p>&copy; 2025 Ishan's Robotics Portfolio. All rights reserved.</p>
   </footer>
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+
 </body>
 </html>
