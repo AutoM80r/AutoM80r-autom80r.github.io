@@ -67,12 +67,8 @@ nav ul li a {
 .hero {
   text-align: center;
   padding: 6rem 2rem 4rem;
-  background:
-    linear-gradient(rgba(16, 18, 35, 0.85), rgba(22, 26, 46, 0.85)),
-    url('https://img.freepik.com/premium-photo/hightech-cyberpunk-robotics-lab-with-sleek-robotic-arms-neon-accents_735318-9563.jpg');
+  background: linear-gradient(145deg, #101223, #161a2e);
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   position: relative;
 }
 
@@ -170,18 +166,6 @@ nav ul li a {
 .contact p {
   color: #ccc;
   margin-bottom: 1rem;
-}
-
-/* Section Robot Arm Image */
-.about-img {
-  margin-top: 2rem;
-  max-width: 600px;
-  width: 100%;
-  border-radius: 12px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 0 0 20px rgba(0, 191, 255, 0.15);
 }
 
 /* Footer */
