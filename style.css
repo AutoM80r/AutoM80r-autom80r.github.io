@@ -217,53 +217,56 @@ body {
 }
 
 /* ==== Projects Section ==== */
+/* ==== Projects Section ==== */
 .projects {
   background: var(--surface-light);
 }
 .project-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(292px, 1fr));
-  gap: 2.2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.8rem;
   margin-top: 1.3rem;
 }
 .project-card {
   background: var(--card-bg);
   border-radius: 18px;
-  box-shadow: 0 0 30px 7px var(--card-shadow);
+  box-shadow: 0 0 25px 6px var(--card-shadow);
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2.1rem 1.2rem 1.7rem 1.2rem;
+  padding: 1.8rem 1rem 1.5rem 1rem;
   position: relative;
   transition: transform 0.24s, box-shadow 0.22s;
-  min-height: 320px;
+  min-height: 270px;
   overflow: hidden;
 }
 .project-card:hover {
-  box-shadow: 0 0 63px 17px #00bfff66, 0 0 11px #003c7d77;
-  transform: translateY(-7px) scale(1.03) rotate(-0.7deg);
+  box-shadow: 0 0 58px 14px #00bfff66, 0 0 10px #003c7d77;
+  transform: translateY(-6px) scale(1.02) rotate(-0.5deg);
 }
 .project-card img {
-  width: 62px; height: 62px;
-  margin-bottom: 19px;
+  width: 56px;
+  height: 56px;
+  margin-bottom: 15px;
   border-radius: 50%;
   background: #101529;
-  box-shadow: 0 0 21px 6px #00bfff33;
+  box-shadow: 0 0 18px 5px #00bfff33;
   object-fit: contain;
 }
 .project-card h3 {
   font-family: 'Orbitron', 'Outfit', sans-serif;
   color: var(--neon);
-  font-size: 1.38rem;
-  margin: 0 0 12px 0;
-  letter-spacing: 0.7px;
+  font-size: 1.25rem;
+  margin: 0 0 10px 0;
+  letter-spacing: 0.6px;
 }
 .project-card p {
   color: var(--text-muted);
-  font-size: 1.01rem;
+  font-size: 0.95rem;
   text-align: center;
-  line-height: 1.68;
+  line-height: 1.5;
 }
+
 
 /* ==== Contact ==== */
 .contact {
